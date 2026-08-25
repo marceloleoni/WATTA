@@ -1,0 +1,13 @@
+backend/vendor/
+backend/.env
+backend/database/*.sqlite
+backend/storage/documentos/*
+!backend/storage/documentos/.gitkeep
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+*.log
+
+watta.zip

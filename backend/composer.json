@@ -1,0 +1,20 @@
+{
+    "name": "watta/backend",
+    "description": "API do sistema WATTA de homologacao de projetos solares",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "slim/slim": "^4.12",
+        "slim/psr7": "^1.6",
+        "firebase/php-jwt": "^7.1",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Watta\\": "src/"
+        }
+    },
+    "scripts": {
+        "db:sqlite": "php database/migrate_sqlite.php --seed"
+    }
+}
